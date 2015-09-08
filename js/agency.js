@@ -17,8 +17,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
           videoId: '-Nmgm3PwZFk',
           playerVars: { 'modestbranding': 1, 'showinfo': 0},
           events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            //'onReady': onPlayerReady,
+            //'onStateChange': onPlayerStateChange
           }
         });
       }
