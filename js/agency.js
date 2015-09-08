@@ -15,10 +15,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
           height: '390',
           width: '640',
           videoId: '-Nmgm3PwZFk',
-          playerVars: { 'modestbranding': 1, 'showinfo': 0},
+          playerVars: { 'modestbranding': 1, 'showinfo': 0, 'controls':0, 'start': 188},
           events: {
-            //'onReady': onPlayerReady,
-            //'onStateChange': onPlayerStateChange
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
           }
         });
       }
@@ -67,8 +67,8 @@ $(document).ready(function(){
 
     $('.video-overlay-left-button').click(function(){
         $('#video-overlay').toggle();
-        var element = $("#bgvid").get(0);
-        element.playVideo();
+        player.seekTo(0);
+        player.playVideo();
         /*$('#video-overlay').toggle();
         $("video").get(0).setAttribute("controls","controls");
         if($("video").get(0).paused){

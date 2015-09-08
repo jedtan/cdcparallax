@@ -109,8 +109,9 @@ strong{
 	float: left;
 }
 .video-overlay-left-button{
+	margin-left: 10px;
+	margin-top: 6px;
 	background: none;
-	margin-top: 20px;
 	padding: 0px;
 	border: none;
 }
