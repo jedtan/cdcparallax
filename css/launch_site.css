@@ -7,6 +7,12 @@
 	padding-top: 60px;
 	padding-bottom: 50px;
 }
+.value-container{
+	width: 120px;
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
+}
 .title-text td{
 	vertical-align: baseline;
 }
@@ -39,8 +45,6 @@ table{
 }
 .value-icon{
 	width: 100px;
-	margin-left: 15px;
-	margin-right: 15px;
 }
 .footer-image{
 	height: 45px;
@@ -364,6 +368,26 @@ a.anchor{
 		padding: 0px;
 	}*/
 
+/* Media Query */
+@media (min-width:769px) and (max-width: 1000px){
+	.social-media img{
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 75px;
+	}
+}
+@media (min-width:320px) and (max-width: 768px){
+	#countbox1{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.social-media img{
+		margin-right: 10px;
+		margin-left: 10px;
+		width: 60px;
+	}
+}
 /* Smartphones; (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1000px) {
 	.social-media img{
