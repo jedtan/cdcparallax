@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+#connect{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 #value{
-	padding-top: 10px;
+	padding-top: 60px;
+	padding-bottom: 50px;
 }
 .title-text td{
 	vertical-align: baseline;
@@ -22,7 +27,8 @@ table{
 	padding-bottom: 20px;
 }
 #vision{
-	padding-bottom: 10px;
+	
+	padding-bottom: 90px;
 }
 #mission{
 	background-image: url("../img/mission_background.jpg");
