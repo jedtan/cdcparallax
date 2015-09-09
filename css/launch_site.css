@@ -1,11 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+#name-container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 #connect{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 #value{
-	padding-top: 60px;
-	padding-bottom: 50px;
+	padding-top: 70px;
+	padding-bottom: 60px;
 }
 .value-container{
 	width: 120px;
@@ -29,19 +33,20 @@ table{
 }
 #model{
 	background-color: #d3d3d3;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 #vision{
-	
-	padding-bottom: 90px;
+	padding-top: 10px;
+	padding-bottom: 140px;
 }
 #mission{
 	background-image: url("../img/mission_background.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 41.66vw;
+    min-height: 250px;
 }
 .value-icon{
 	width: 100px;
@@ -229,6 +234,8 @@ strong{
 
 #footer{
 	background-color: #33CCFF;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .display-img{
 	width: 100%;
