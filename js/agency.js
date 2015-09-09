@@ -64,7 +64,9 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-
+    $('#read-more').click(function(){
+        window.location.href="https://beam.stanford.edu/about-us-1";
+    });
     $('.video-overlay-left-button').click(function(){
         $('#video-overlay').toggle();
         player.seekTo(0);
