@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 #name-container{
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 #connect{
 	padding-top: 90px;
@@ -13,8 +13,8 @@
 }
 .value-container{
 	width: 120px;
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-left: 2.8vw;
+	margin-right: 2.8vw;
 	display: inline-block;
 }
 .title-text td{
@@ -141,6 +141,7 @@ strong{
 }
 .sub-title-bottom{
 	margin-top: 0px;
+	margin-bottom: 30px;
 }
 .launchpage-button{
 	border-radius: 5px;
@@ -271,11 +272,13 @@ body{
 }
 
 .paragraph-text{
+	margin-top: 0px;
 	text-align: center;
 }
 
 .paragraph-mission-text{
 	text-align: justify;
+	margin-top: 0px;
 }
 
 

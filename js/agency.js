@@ -15,7 +15,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
           height: '390',
           width: '640',
           videoId: '-Nmgm3PwZFk',
-          playerVars: { 'modestbranding': 1, 'showinfo': 0, 'controls':0, 'start': 188},
+          playerVars: { 'modestbranding': 1, 'showinfo': 0, 'controls':0, 'start': 24},
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
