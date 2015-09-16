@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 .vertical-align{
 	display: flex;
 	align-items: center;
@@ -26,8 +30,8 @@ p.vcard {
 }
 .value-container{
 	width: 120px;
-	margin-left: 2.8vw;
-	margin-right: 2.8vw;
+	margin-left: 2.7vw;
+	margin-right: 2.7vw;
 	display: inline-block;
 }
 .title-text td{
@@ -40,9 +44,9 @@ table{
 	margin: 0 auto;
 }
 #mission-text{
-	-webkit-transform: translateY(30%);
+	/*-webkit-transform: translateY(30%);
   	-ms-transform: translateY(30%);
-  	transform: translateY(30%);
+  	transform: translateY(30%);*/
 }
 #model{
 	background-color: #d3d3d3;
@@ -254,6 +258,7 @@ strong{
 }
 .display-img{
 	width: 100%;
+	max-width: 400px;
 }
 body{
 	font-family:'Source Sans Pro', sans-serif;
@@ -286,12 +291,13 @@ body{
 }
 
 .paragraph-text{
+	font-size: 20px;
 	margin-top: 0px;
 	text-align: center;
 }
 
 .paragraph-mission-text{
-	font-size: 24px;
+	font-size: 20px;
 	text-align: left;
 	margin-top: 0px;
 }
@@ -419,6 +425,22 @@ a.anchor{
 		margin-right: 10px;
 		margin-left: 10px;
 		width: 50px;
+	}
+}
+
+@media (max-width: 1000px){
+	.value-container{
+		width: 110px;
+		margin-left: 2vw;
+		margin-right: 2vw;
+		display: inline-block;
+	}
+	.value-container h3{
+		font-size: 20px;
+
+	}
+	.value-icon{
+		width: 90px;
 	}
 }
 
