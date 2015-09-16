@@ -1,13 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-.vcenter {
-    display: inline-block;
+.left-mission{
+	height: 41.66vw;
+}
+.vcenter{
+	display: inline-block;
     vertical-align: middle;
     float: none;
+
 }
-.vertical-align{
-	display: flex;
-	align-items: center;
+
+.graphic-container, #mission-text, .mission-parent{
+	height: 100%;
 }
+
 ul{
 	display: block;
 }
