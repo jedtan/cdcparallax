@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.vertical-align{
+	display: flex;
+	align-items: center;
+}
 ul{
 	display: block;
 }
@@ -148,6 +153,7 @@ strong{
 	margin-right: 2px;
 }
 .sub-title-bottom{
+	font-size: 60px;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
@@ -285,7 +291,8 @@ body{
 }
 
 .paragraph-mission-text{
-	text-align: justify;
+	font-size: 24px;
+	text-align: left;
 	margin-top: 0px;
 }
 
