@@ -458,18 +458,6 @@ a.anchor{
 		width: 75px;
 	}
 }
-@media (min-width:320px) and (max-width: 768px){
-	#countbox1{
-		margin-top: 10px;
-		margin-bottom: 10px;
-		text-align: center;
-	}
-	.social-media img{
-		margin-right: 10px;
-		margin-left: 10px;
-		width: 50px;
-	}
-}
 /* Smartphones; (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1000px) {
 	.social-media img{
@@ -563,7 +551,31 @@ a.anchor{
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media (min-width:320px) and (max-width: 768px){
+	.display-img{
+		margin-bottom: 30px;
+	}
+	.value-container p{
+		margin-bottom: 20px;
+	}
+	.sub-title-bottom{
+		font-size: 40px;
+		text-align: center;
+	}
+	.paragraph-mission-text, .paragraph-text{
+		font-size: 18px;
+	}
+	#countbox1{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.social-media img{
+		margin-right: 10px;
+		margin-left: 10px;
+		width: 50px;
+	}
+
 	#countbox1{
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -595,7 +607,7 @@ a.anchor{
 	.social-media img{
 		margin-right: 5px;
 		margin-left: 5px;
-		width: 40px;
+		width: 55px;
 	}
 	.video-overlay-left{
 		margin-left: 30px;
@@ -616,8 +628,8 @@ a.anchor{
 	}
 	#mainLogo{
 		    top: 60%;
-    		transform: translateY(110%);
-    		-webkit-transform: translateY(110%);
+    		transform: translateY(50%);
+    		-webkit-transform: translateY(50%);
 	}
 
 	
