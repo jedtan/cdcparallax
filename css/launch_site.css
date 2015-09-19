@@ -1,4 +1,41 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+/*Connections in Actions Lineup*/
+@media (min-width: 768px){
+.video-overlay-left {
+    width: 750px;
+    
+}
+}
+@media (min-width: 992px){
+.video-overlay-left {
+    width: 970px;
+    padding-left: 30px;
+}
+}
+@media (min-width: 1200px){
+.video-overlay-left {
+    width: 1170px;
+    padding-left: calc(30px + .083333 * 100vw);
+}
+}
+
+
+.video-overlay-left {
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-----*/
+
+
+
+
+
+#footer{
+	color: white;
+}
 .navbar-brand,
 .navbar-nav li a {
     line-height: 70px;
@@ -37,7 +74,8 @@ p.vcard {
 	padding-bottom: 90px;
 }
 #value{
-	padding-top: 100px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .value-container{
 	width: 120px;
@@ -60,7 +98,7 @@ table{
   	transform: translateY(30%);*/
 }
 #model{
-	background-color: #d3d3d3;
+	background-color: #fbfbf9;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
@@ -156,7 +194,6 @@ strong{
 		height: 72px;
 }
 .video-overlay-left{
-	margin-left: 60px;
 	position: relative;
   	top: 50%;
   	-webkit-transform: translateY(-50%);
@@ -168,7 +205,7 @@ strong{
 	margin-right: 2px;
 }
 .sub-title-bottom{
-	font-size: 60px;
+	font-size: 52px;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
@@ -179,8 +216,9 @@ strong{
 }
 .launchpage-blue-button{
 	border-radius: 5px;
-	background-color: #33CCFF;
-	border-color: black;
+	background-color: #007C92;
+	border-color: white;
+	border-style: solid;
 	margin-bottom: 20px;
 }
 .row-fluid [class*="span"] {
@@ -263,7 +301,7 @@ strong{
 }
 
 #footer{
-	background-color: #33CCFF;
+	background-color: #007C92;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
@@ -305,6 +343,7 @@ body{
 	font-size: 20px;
 	margin-top: 0px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .paragraph-mission-text{
@@ -343,19 +382,20 @@ a.anchor{
 		visibility: hidden;
 	}
 	.numberCircle {
+		box-shadow: 0 0 0 3px white;
 		margin-left: 10px;
 		margin-right: 10px;
+		margin-bottom: 5px;
     	display:inline-block;
-    	height: 60px;
-	    width: 60px;
-	    line-height: 60px;
-
-	    -moz-border-radius: 30px; /* or 50% */
-	    border-radius: 30px; /* or 50% */
+    	height: 80px;
+	    width: 80px;
+	    line-height: 80px;
+	    -moz-border-radius: 40px; /* or 50% */
+	    border-radius: 40px; /* or 50% */
 	    border-width: 2px;
 	    border-color: black;
-	    background-color: white;
-	    color: black;
+	    background-color: #007C92;
+	    color: white;
 	    text-align: center;
 	    font-size: 2em;
 	}
