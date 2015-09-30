@@ -20,6 +20,9 @@
 }
 
 
+.twitter-holder{
+	margin-top: 20px;
+}
 .video-overlay-left {
     /*padding-right: 15px;
     padding-left: 15px;*/
@@ -100,7 +103,7 @@ table{
 #model{
 	background-color: #fbfbf9;
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 100px;
 }
 #vision{
 	padding-top: 10px;
@@ -564,6 +567,7 @@ a.anchor{
 	}
 	.paragraph-mission-text, .paragraph-text{
 		font-size: 18px;
+		text-align: center;
 	}
 	#countbox1{
 		margin-top: 10px;
