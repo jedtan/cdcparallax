@@ -73,6 +73,9 @@ $(document).ready(function(){
     $('#read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us-1";
     });
+    $('.launchpage-blue-button').click(function(){
+        window.location.href="https://stanforduniversity.qualtrics.com/SE/?SID=SV_50A9JYkHiTxoqTX";
+    });
     $('.video-overlay-left-button').click(function(){
         $('#video-overlay').toggle();
         player.seekTo(0);
