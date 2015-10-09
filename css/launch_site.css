@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+#mission-audio-player{
+	margin-top: 10px;
+}
 @media (min-width: 768px){
 .video-overlay-left {
     width: 750px;
