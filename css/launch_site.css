@@ -19,6 +19,9 @@
 }
 }
 
+.thick{
+	font-weight: bold;
+}
 
 .twitter-holder{
 	margin-top: 20px;
@@ -134,7 +137,7 @@ a {
     color: #736C51;
 }
 .top-image{
-	height: 56.25vw;
+	height: 37.55vw;
 	width: 100vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -214,8 +217,9 @@ strong{
 }
 .launchpage-button{
 	border-radius: 5px;
-	background-color: white;
+	background-color: transparent;
 	border-color: black;
+	font-size: 17px;
 }
 .launchpage-blue-button{
 	border-radius: 5px;
