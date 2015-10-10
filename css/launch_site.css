@@ -1,5 +1,86 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.image-surround{
+	display: inline-block;
+}
+#pursue-caption{
+	background-image: url("../img/icons/model_bubble_ltgreen.png");
+}
+#design-caption{
+	background-image: url("../img/icons/model_bubble_dkgreen.png");
+}
+#venture-caption{
+	background-image: url("../img/icons/model_bubble_teal.png");
+}
+#connect-caption{
+	background-image: url("../img/icons/model_bubble_yellow.png");
+}
+.more-caption-holder{
+	margin-top: 82px;
+	margin-left: 82px;
+	width: 70%;
+	text-align: justify;
+}
+.more{ position:absolute; 
+	border: 1px solid #444;
+	overflow:hidden; 
+	margin-left: 10px;
+	margin-right: 10px;
+    display:inline-block;
+    height: 130px;
+	width: 130px;
+	line-height: 130px;
+	-moz-border-radius: 50%; /* or 50% */
+	border-radius: 50%; /* or 50% */
+	border-width: 2px;
+	border-color: black;
+	background-color: transparent;
+	color: black;
+	text-align: justify;
+	font-size: 1.5em;
+}
+.more-caption{
+	position:absolute; 
+	width: 500px;
+	height: 220px;
+	display:inline-block;
+	overflow:hidden; 
+	padding: 0px; 
+	z-index: 50;
+}
+.more span{ position:absolute; left:60px; width:160px; padding:15px 0 0 5px; color:#FFF; font:bold 13px Lucida Grande, Arial, sans-serif; text-shadow:#000 1px 1px 0px; }
+#pursue{ 
+	top:200px; 
+	left:10px;
+}
+#pursue-caption{ 
+	top:150px; 
+	left:122px;
+}
+#design{ 
+	top:10px; 
+	left:117px;
+}
+#design-caption{ 
+	top:-40px; 
+	left:230px;
+}
+#venture{ 
+	top:200px; 
+	left:230px;
+}
+#venture-caption{ 
+	top:150px; 
+	left:343px;
+}
+#connect-circle{ 
+	top:128px; 
+	left:117px;
+}
+#connect-caption{ 
+	top:55px; 
+	left:250px;
+}
 #mission-audio-player{
 	margin-top: 10px;
 }
@@ -10,6 +91,7 @@
 }
 }
 @media (min-width: 992px){
+
 .video-overlay-left {
     width: 970px;
     padding-left: 30px;

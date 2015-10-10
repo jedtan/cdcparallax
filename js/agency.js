@@ -64,9 +64,51 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
+    $(window).resize(function(){
+      var width  = $('#model-graphic').width();
+      var circlewidth = .36 * width;
+      $('.more').width(circlewidth);
+      $('.more').height(circlewidth);
+      $(".more").css("line-height", circlewidth + "px");
+      newWidth = width/2;
+      leftWidth = width/4;
+      rightWidth = 3 * width / 4;
+      $("#design").css({"left": newWidth + "px"});
+      $("#connect-circle").css({"left": newWidth + "px"});
+      $("#pursue").css({"left": leftWidth});
+      $("#venture").css({"left": rightWidth})
+      console.log("Width is " + width);
+      console.log("Changed with to " + .389*width + "px");
+    });
+    $('.more-caption').hide();
     $('#mission-audio-player').hide();
+    $('#design').mouseenter(function() {
+        $('#design-caption').show();
+    })
+    .mouseleave(function() {
+        $('#design-caption').hide();
+    });
+    $('#connect-circle').mouseenter(function() {
+        $('#connect-caption').show();
+    })
+    .mouseleave(function() {
+        $('#connect-caption').hide();
+    });
+    $('#venture').mouseenter(function() {
+        $('#venture-caption').show();
+    })
+    .mouseleave(function() {
+        $('#venture-caption').hide();
+    });
+    $('#pursue').mouseenter(function() {
+        $('#pursue-caption').show();
+    })
+    .mouseleave(function() {
+        $('#pursue-caption').hide();
+    });
+
     $('#mission-audio').click(function(){
-      $('#mission-audio-player').show();
+      //$('#mission-audio-player').show();
       var audio = document.getElementById("mission-audio-player"); 
       audio.play();
     });
