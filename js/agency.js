@@ -64,22 +64,40 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-    $(window).resize(function(){
+    function resize(){
       var width  = $('#model-graphic').width();
+      var height  = $('#model-graphic').height();
       var circlewidth = .36 * width;
       $('.more').width(circlewidth);
       $('.more').height(circlewidth);
       $(".more").css("line-height", circlewidth + "px");
       newWidth = width/2;
-      leftWidth = width/4;
-      rightWidth = 3 * width / 4;
-      $("#design").css({"left": newWidth + "px"});
-      $("#connect-circle").css({"left": newWidth + "px"});
-      $("#pursue").css({"left": leftWidth});
-      $("#venture").css({"left": rightWidth})
+      newWidthC = newWidth + 112;
+      leftWidth = width * .19;
+      leftWidthC = leftWidth + 112;
+      rightWidth = width *.81;
+      rightWidthC = rightWidth + 112;
+      topHeight = height * .04;
+      topHeightC = topHeight - 50;
+      newHeight = height * .38;
+      newHeightC = newHeight - 50;
+      bottomHeight = height * .6;
+      bottomHeightC = bottomHeight - 50;
+      $("#design").css({"left": newWidth + "px", "top" : topHeight + "px"});
+      $("#design-caption").css({"left": newWidthC + "px", "top" : topHeightC + "px"});
+      $("#connect-circle").css({"left": newWidth + "px", "top": newHeight + "px"});
+      $("#connect-caption").css({"left": newWidthC + "px", "top" : newHeightC + "px"});
+      $("#pursue").css({"left": leftWidth + "px", "top" : bottomHeight + "px"});
+      $("#pursue-caption").css({"left": leftWidthC + "px", "top" : bottomHeightC + "px"});
+      $("#venture").css({"left": rightWidth + "px", "top" : bottomHeight + "px"})
+      $("#venture-caption").css({"left": rightWidthC + "px", "top" : bottomHeightC + "px"});
       console.log("Width is " + width);
       console.log("Changed with to " + .389*width + "px");
+    }
+    $(window).resize(function(){
+      resize();
     });
+    resize();
     $('.more-caption').hide();
     $('#mission-audio-player').hide();
     $('#design').mouseenter(function() {
