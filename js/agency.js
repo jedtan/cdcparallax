@@ -126,12 +126,12 @@ $(document).ready(function(){
     });
 
     $('#mission-audio').click(function(){
-      //$('#mission-audio-player').show();
+      $('#mission-audio-player').show();
       var audio = document.getElementById("mission-audio-player"); 
       audio.play();
     });
     $('#read-more').click(function(){
-        window.location.href="https://beam.stanford.edu/about-us-1";
+        window.location.href="https://beam.stanford.edu/about-us";
     });
     $('.launchpage-blue-button').click(function(){
         window.location.href="https://stanforduniversity.qualtrics.com/SE/?SID=SV_50A9JYkHiTxoqTX";
