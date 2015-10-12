@@ -129,6 +129,7 @@ $(document).ready(function(){
       $('#mission-audio-player').show();
       var audio = document.getElementById("mission-audio-player"); 
       audio.play();
+      $('#mission-audio').hide();
     });
     $('#read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us";
