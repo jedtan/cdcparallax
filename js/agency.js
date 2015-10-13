@@ -100,6 +100,12 @@ $(document).ready(function(){
     resize();
     $('.more-caption').hide();
     $('#mission-audio-player').hide();
+    $('.more').mouseenter(function() {
+        $('.below-popup').show();
+    })
+    .mouseleave(function() {
+        $('.below-popup').hide();
+    });
     $('#design').mouseenter(function() {
         $('#design-caption').show();
     })

@@ -3,6 +3,28 @@
 hr{
 	border-width: 2px;
 }
+.below-popup hr{
+	border-width: 3px;
+	border-color: black;
+	margin: 4px;
+}
+.below-popup{
+	display: none;
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+	position:absolute; 
+	overflow:hidden; 
+	background-color: #f1f1f1;
+}
+.below-popup ul{
+	list-style-type: none;
+	list-style: none;
+	padding-left: 0;
+}
+.below-popup li{
+	line-height: 14px;
+}
 .mobile-mission-text{
 	font-size: 18px;
 }
@@ -42,7 +64,6 @@ hr{
 	text-align: left;
 }
 .more{ position:absolute; 
-	border: 1px solid #444;
 	overflow:hidden; 
 	margin-left: 10px;
 	margin-right: 10px;
@@ -580,9 +601,9 @@ a.anchor{
 @media (max-width: 1000px){
 	.footer-image{
 		height: 38px;
-		-webkit-transform: translateY(22%);
-	  	-ms-transform: translateY(22%);
-	  	transform: translateY(22%);
+		-webkit-transform: translateY(36%);
+	  	-ms-transform: translateY(36%);
+	  	transform: translateY(36%);
 	}
 	.navbar-brand,
 	.navbar-nav li a {
@@ -716,7 +737,6 @@ a.anchor{
 	    font-size: 1.5em;
 	}
 	.footer-image{
-		width: 200px;
 	}
 	.launchpage-button{
 		margin-bottom: 10px;
