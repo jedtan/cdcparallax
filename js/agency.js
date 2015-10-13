@@ -71,11 +71,11 @@ $(document).ready(function(){
       $('.more').width(circlewidth);
       $('.more').height(circlewidth);
       $(".more").css("line-height", circlewidth + "px");
-      newWidth = width/2;
+      newWidth = width * .29;
       newWidthC = newWidth + 112;
-      leftWidth = width * .19;
+      leftWidth = -width * .02;
       leftWidthC = leftWidth + 112;
-      rightWidth = width *.81;
+      rightWidth = width *.6;
       rightWidthC = rightWidth + 112;
       topHeight = height * .04;
       topHeightC = topHeight - 50;
@@ -131,7 +131,7 @@ $(document).ready(function(){
       audio.play();
       $('#mission-audio').hide();
     });
-    $('#read-more').click(function(){
+    $('.read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us";
     });
     $('.launchpage-blue-button').click(function(){
