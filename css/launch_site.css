@@ -3,6 +3,9 @@
 hr{
 	border-width: 2px;
 }
+.text-version{
+	text-decoration: underline;
+}
 .below-popup hr{
 	border-width: 3px;
 	border-color: black;
@@ -63,7 +66,9 @@ hr{
 	width: 70%;
 	text-align: left;
 }
-.more{ position:absolute; 
+.more{ 
+	/*border: 1px solid #444;*/
+	position:absolute; 
 	overflow:hidden; 
 	margin-left: 10px;
 	margin-right: 10px;
@@ -258,7 +263,7 @@ a {
     color: #736C51;
 }
 .top-image{
-	height: 37.55vw;
+	height: 56.25vw;
 	width: 100vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -298,9 +303,7 @@ strong{
 #bgvid{
 	position: absolute;
 }
-.video-container{
-	position: relative;
-}
+
 
 #video-overlay{
 	position: relative; 
