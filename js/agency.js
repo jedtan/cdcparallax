@@ -62,9 +62,6 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-    $( ".audiences" ).tooltip({
-      content: "Awesome title!"
-    });
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
