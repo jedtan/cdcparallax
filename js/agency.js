@@ -89,20 +89,22 @@ $(document).ready(function(){
       $("#pursue-caption").css({"left": leftWidthC + "px", "top" : bottomHeightC + "px"});
       $("#venture").css({"left": rightWidth + "px", "top" : bottomHeight + "px"})
       $("#venture-caption").css({"left": rightWidthC + "px", "top" : bottomHeightC + "px"});
-      console.log("Width is " + width);
-      console.log("Changed with to " + .389*width + "px");
     }
     $(window).resize(function(){
       resize();
     });
     resize();
     $('.more-caption').hide();
+    $('.below-popup').hide();
     $('#mission-audio-player').hide();
-    $('.more').mouseenter(function() {
-        $('.below-popup').show();
-    })
-    .mouseleave(function() {
-        $('.below-popup').hide();
+    $('.audience').hover(function(e){
+      console.log(e);
+      $('.below-popup').css( 'position', 'absolute' );
+        $('.below-popup').css( 'top', e.pageY-20);
+        $('.below-popup').css( 'left', e.pageX-70);
+       $('.below-popup').show();
+      },function(){
+      $('.below-popup').hide();
     });
     $('#design').mouseenter(function() {
         $('#design-caption').show();

@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.audience{
+	border-bottom: 2px dashed #999;
+    text-decoration: none;
+}
 #mainLogo{
 	display: inline;
 	float: left;
@@ -68,21 +72,28 @@ hr{
 	margin: 4px;
 }
 .below-popup{
-	display: none;
+
 	padding: 10px;
 	text-align: left;
-	font-size: 12px;
-	position:absolute; 
+	font-size: 18px;
+	position:fixed; 
 	overflow:hidden; 
-	background-color: #f1f1f1;
+		width: 240px;
+	height: 250px;
+	background-image: url("../img/model_tooltip_bubble.png");
+	z-index: 200;
+
 }
 .below-popup ul{
 	list-style-type: none;
 	list-style: none;
 	padding-left: 0;
+	margin-top: 52px;
+	margin-left: 22px;
+	background-size: contain;
 }
 .below-popup li{
-	line-height: 14px;
+	
 }
 .mobile-mission-text{
 	font-size: 18px;
@@ -756,6 +767,9 @@ a.anchor{
 }
 
 @media (max-width: 767px){
+	.more{
+		display: none;
+	}
 	#global-footer img{
 		margin-right: 0px;
 		display: inline;
