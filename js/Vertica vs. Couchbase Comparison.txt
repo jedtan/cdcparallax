@@ -1,8 +1,0 @@
-Vertica vs. Couchbase
-
-Both Vertica and Couchbase seem very fast for ID lookups (i.e. get a single record with a specific ID). 
-Vertica undoubtedly works better than Couchbase when the two are unindexed.
-
-Example Queries
-Couchbase: ~3 million records
-Vertica: ~40 million records (with 600 million record join table)

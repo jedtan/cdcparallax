@@ -1,4 +1,0 @@
-<div class="more" id="couch"> <!-- id refers to specific item -->
-<a href="#"><img src="more.png"/></a> <!--defines button image, don't change link -->
-<span>IKEA Klippan Couch</span> <!-- The caption for the button -->
-</div>
