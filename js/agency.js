@@ -136,6 +136,7 @@ $(document).ready(function(){
       var audio = document.getElementById("mission-audio-player"); 
       audio.play();
       $('#mission-audio').hide();
+      player.pauseVideo();
     });
     $('.read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us";
@@ -147,6 +148,8 @@ $(document).ready(function(){
         $('#video-overlay').toggle();
         player.seekTo(0);
         player.playVideo();
+        var audio = document.getElementById("mission-audio-player"); 
+        audio.pause();
         /*$('#video-overlay').toggle();
         $("video").get(0).setAttribute("controls","controls");
         if($("video").get(0).paused){

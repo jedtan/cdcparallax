@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.tab-method{
+	display: none;
+}
+	.footer-text-p{
+		font-size: 18px;
+	}
 .sub-slogan{
 	display: block;
     font-size: 17px;
@@ -10,7 +16,7 @@
     text-transform: none;
     line-height: 1em;
 }
-beam.stanford.edu/
+
 .audience{
 	border-bottom: 2px dashed #999;
     text-decoration: none;
@@ -521,6 +527,7 @@ strong{
 	border-color: white;
 	border-style: solid;
 	margin-bottom: 20px;
+	font-size: 26px;
 }
 .row-fluid [class*="span"] {
     display: block;
@@ -870,6 +877,7 @@ a.anchor{
 		font-size: 18px;
 		text-align: center;
 	}
+
 	#countbox1{
 		margin-top: 10px;
 		margin-bottom: 10px;
