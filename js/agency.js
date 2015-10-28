@@ -65,7 +65,16 @@ $(document).ready(function(){
     var videoElement = document.getElementById("mission-audio-player");
     var textTracks = videoElement.textTracks; // one for each track element
     var textTrack = textTracks[0]; // corresponds to the first track element
-    console.log(textTrack);
+    for (var j = 0; j < textTrack.cues.length; ++j) {
+      var cue = textTrack.cues[j];
+      cue.onenter = function(){
+        console.log("enter");
+      };
+
+      cue.onexit = function(){
+        // do something else
+      };
+    }
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
