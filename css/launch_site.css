@@ -753,13 +753,13 @@ a.anchor{
 	}
 }
 /* Smartphones; (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1000px) {
+/*@media only screen and (min-device-width : 769px) and (max-device-width : 1000px) {
 	.social-media img{
 		margin-right: 10px;
 		margin-left: 10px;
 		width: 50px;
 	}
-}
+}*/
 
 @media (max-width: 1000px){
 	.footer-image{
@@ -849,9 +849,9 @@ a.anchor{
 	    padding-top: 30px;
 	    text-align: center;
 	}
-	.row, .thumbnails {
+	/*.row, .thumbnails {
     	margin-left: 0;
-	}
+	}*/
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
