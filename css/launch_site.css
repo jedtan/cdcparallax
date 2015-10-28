@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.join-us{
+	font-size: 40px;
+}
 .tab-method{
 	display: none;
 }
@@ -379,6 +382,7 @@ p.vcard {
 	margin-left: 2.7vw;
 	margin-right: 2.7vw;
 	display: inline-block;
+	vertical-align: top;
 }
 .title-text td{
 	vertical-align: baseline;

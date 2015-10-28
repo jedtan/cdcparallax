@@ -62,6 +62,10 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
+    var videoElement = document.getElementById("mission-audio-player");
+    var textTracks = videoElement.textTracks; // one for each track element
+    var textTrack = textTracks[0]; // corresponds to the first track element
+    console.log(textTrack);
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
