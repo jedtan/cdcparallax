@@ -1,5 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.nav-tabs li a{
+	text-decoration: underline;
+}
+.tab-pane img{
+	width: 100%;
+	max-width: 350px;
+}
 .join-us{
 	font-size: 40px;
 }
@@ -216,37 +223,45 @@ hr{
 	left:250px;
 }
 #mission-audio-player{
-	/*margin-top: 10px;*/
+	margin-top: 10px;
 }
-@media (max-width: 1033px){
-	.sub-slogan{
-	display: none;
-}
+
+@media (max-width: 1062px){
+	#mainLogo{
+		padding-top: 1px;
+		display: inline;
+		float: left;
+		margin-left: 5px;
+		position: relative;
+		top: 40%;
+		-ms-transform: translateY(40%); 
+	    -webkit-transform: translateY(40%); 
+	    transform: translateY(40%);
+	}
+    .sub-slogan{
+		display: block;
+	    font-size: 17px;
+	    letter-spacing: 0.015em;
+	    font-weight: normal;
+	    margin: 0 0 0 0;
+	    padding-top: 6px;
+	    text-transform: none;
+	    line-height: 1em;
+	}
 	#site-name a, #site-name a:hover, #site-name a, #site-name a:focus, #site-title-first-line a, #site-title-first-line a:hover, #site-title-first-line a:focus, #site-title-second-line a, #site-title-second-line a:hover, #site-title-second-line a:focus {
     color: #3f3c30;
     text-decoration: none;
-}
-#mainLogo{
-	display: inline;
-	float: left;
-	margin-left: 5px;
-	position: relative;
-	top: 70%;
-	-ms-transform: translateY(160%); /* IE 9 */
-    -webkit-transform: translateY(160%); /* Chrome, Safari, Opera */
-    transform: translateY(160%);
-
 }
 #name-and-slogan {
     padding: 0;
     vertical-align: bottom;
     height: auto;
     width: 100%;
-    padding-left: 5px;
+    padding-left: 10px;
     display: table-cell;
 }
 #site-slogan {
-    font-size: 10px;
+    font-size: 16px;
     color: #3f3c30;
     line-height: 1.2em;
     font-style: italic;
@@ -254,8 +269,8 @@ hr{
     margin-top: 6px;
 }
 .two-lines #site-name, .two-lines #site-title-first-line, .two-lines #site-title-second-line {
-    margin-top: 3px;
-    font-size: 12px;
+    font-size: 30px;
+   	padding-top: 5px;
     letter-spacing: 0;
     line-height: 1.15em;
 }
@@ -268,7 +283,26 @@ hr{
 	font-family: 'Source Sans Pro',sans-serif !important;
 }
 #logo img{
-	max-width: 80px;
+	padding-top: 2px;
+	max-width: 125px;
+}
+#logo{
+	padding: 0 10px 0 0;
+	display: table-cell;
+    vertical-align: bottom;
+    margin: 0;
+    float: left;
+    border-right: 1px solid #2E2D29;
+}
+}
+@media (max-width: 1033px){
+
+
+
+.site-name{
+	font-family: 'Source Sans Pro',sans-serif !important;
+}
+
 }
 #logo{
 	padding: 0 5px 0 0;
@@ -400,7 +434,7 @@ table{
 }
 #vision{
 	padding-top: 10px;
-	padding-bottom: 140px;
+	padding-bottom: 40px;
 }
 #mission{
 	background-image: url("../img/mission_background.jpg");
@@ -794,6 +828,10 @@ a.anchor{
 }
 
 @media (max-width: 767px){
+	#vision{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 	.tab-method{
 		display: block;
 	}
@@ -858,6 +896,77 @@ a.anchor{
 	}*/
 }
 
+@media (max-width: 492px){
+	#mainLogo{
+		padding-top: 1px;
+		display: inline;
+		float: left;
+		margin-left: 5px;
+		position: relative;
+		top: 70%;
+		-ms-transform: translateY(70%); 
+	    -webkit-transform: translateY(70%); 
+	    transform: translateY(70%);
+	}
+    .sub-slogan{
+		display: block;
+	    font-size: 12px;
+	    letter-spacing: 0.015em;
+	    font-weight: normal;
+	    margin: 0 0 0 0;
+	    padding-top: 6px;
+	    text-transform: none;
+	    line-height: 1em;
+	}
+	#site-name a, #site-name a:hover, #site-name a, #site-name a:focus, #site-title-first-line a, #site-title-first-line a:hover, #site-title-first-line a:focus, #site-title-second-line a, #site-title-second-line a:hover, #site-title-second-line a:focus {
+    color: #3f3c30;
+    text-decoration: none;
+}
+#name-and-slogan {
+    padding: 0;
+    vertical-align: bottom;
+    height: auto;
+    width: 100%;
+    padding-left: 10px;
+    display: table-cell;
+}
+#site-slogan {
+    font-size: 16px;
+    color: #3f3c30;
+    line-height: 1.2em;
+    font-style: italic;
+    margin-bottom: -3px;
+    margin-top: 6px;
+}
+.two-lines #site-name, .two-lines #site-title-first-line, .two-lines #site-title-second-line {
+    font-size: 24px;
+   	padding-top: 5px;
+    letter-spacing: 0;
+    line-height: 1.15em;
+}
+#site-name, #site-title-first-line {
+    margin-bottom: -6px;
+    margin-top: -6px;
+    color: #3f3c30;
+}
+.site-name{
+	font-family: 'Source Sans Pro',sans-serif !important;
+}
+#logo img{
+	padding-top: 2px;
+	max-width: 100px;
+}
+#logo{
+	padding: 0 10px 0 0;
+	display: table-cell;
+    vertical-align: bottom;
+    margin: 0;
+    float: left;
+    border-right: 1px solid #2E2D29;
+}
+
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   	#video-overlay{
 		display: none;
@@ -867,11 +976,16 @@ a.anchor{
 
 	
 @media (min-width:320px) and (max-width: 768px){
+	#mission-mobile .container{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 	#mission-mobile{
 		display: block;
 	}
 	#mission{
 		display: none;
+
 	}
 	.display-img{
 		margin-bottom: 30px;

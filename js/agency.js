@@ -68,6 +68,7 @@ $(document).ready(function(){
     for (var j = 0; j < textTrack.cues.length; ++j) {
       var cue = textTrack.cues[j];
       cue.onenter = function(){
+        console.log("hi");
         console.log(cue.text);
         $("#mission-captions").html("<p>" + cue.text + "</p>");
       };
@@ -151,6 +152,9 @@ $(document).ready(function(){
       audio.play();
       $('#mission-audio').hide();
       player.pauseVideo();
+    });
+    $('#mission-read').click(function(){
+        window.location.href = "https://beam.stanford.edu/sites/default/files/parallax_vision_audio_short_-_10_8_15_5.02_pm.pdf"
     });
     $('.read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us";
