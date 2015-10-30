@@ -909,14 +909,14 @@ a.anchor{
 		float: left;
 		margin-left: 5px;
 		position: relative;
-		top: 70%;
-		-ms-transform: translateY(70%); 
-	    -webkit-transform: translateY(70%); 
-	    transform: translateY(70%);
+		top: 90%;
+		-ms-transform: translateY(90%); 
+	    -webkit-transform: translateY(900%); 
+	    transform: translateY(90%);
 	}
     .sub-slogan{
 		display: block;
-	    font-size: 12px;
+	    font-size: 10px;
 	    letter-spacing: 0.015em;
 	    font-weight: normal;
 	    margin: 0 0 0 0;
@@ -933,7 +933,7 @@ a.anchor{
     vertical-align: bottom;
     height: auto;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 5px;
     display: table-cell;
 }
 #site-slogan {
@@ -945,7 +945,7 @@ a.anchor{
     margin-top: 6px;
 }
 .two-lines #site-name, .two-lines #site-title-first-line, .two-lines #site-title-second-line {
-    font-size: 24px;
+    font-size: 18px;
    	padding-top: 5px;
     letter-spacing: 0;
     line-height: 1.15em;
@@ -956,14 +956,17 @@ a.anchor{
     color: #3f3c30;
 }
 .site-name{
+	min-width: 160px;
+	padding-bottom: 3px;
 	font-family: 'Source Sans Pro',sans-serif !important;
 }
 #logo img{
 	padding-top: 2px;
-	max-width: 100px;
+	max-width: 65px;
+	padding-bottom: 6px;
 }
 #logo{
-	padding: 0 10px 0 0;
+	padding: 0 5px 0 0;
 	display: table-cell;
     vertical-align: bottom;
     margin: 0;
