@@ -70,7 +70,7 @@ $(document).ready(function(){
     textTrack.oncuechange = function (){
     // "this" is a textTrack
       var cue = this.activeCues[0]; // assuming there is only one active cue
-      console.log(cue);
+      $("#mission-captions").html("<p>" + cue.text + "</p>");
     // do something
     }
     for (var j = 0; j < textTrack.cues.length; ++j) {
@@ -120,6 +120,7 @@ $(document).ready(function(){
     $('.more-caption').hide();
     $('.below-popup').hide();
     $('#mission-audio-player').hide();
+    $('#mission-captions').hide();
     $('.audience').hover(function(e){
       console.log(e);
       $('.below-popup').css( 'position', 'absolute' );
@@ -156,6 +157,7 @@ $(document).ready(function(){
 
     $('#mission-audio').click(function(){
       $('#mission-audio-player').show();
+      $('#mission-captions').show();
       var audio = document.getElementById("mission-audio-player"); 
       audio.play();
       $('#mission-audio').hide();
