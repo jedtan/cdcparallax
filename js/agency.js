@@ -76,21 +76,21 @@ $(document).ready(function(){
 
     $(videoElement).on("timeupdate", function() {
       console.log("time update");
-      console.log(textTrack.activeCues[0]);
+      $("#mission-captions").html("<p>" + textTrack.activeCues[0].text + "</p>");
     });
 
-    for (var j = 0; j < textTrack.cues.length; ++j) {
+    /*for (var j = 0; j < textTrack.cues.length; ++j) {
       var cue = textTrack.cues[j];
       cue.onenter = function(){
         console.log("hi");
         console.log(cue.text);
-        $("#mission-captions").html("<p>" + cue.text + "</p>");
+        
       };
 
       cue.onexit = function(){
         // do something else
       };
-    }
+    }*/
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
