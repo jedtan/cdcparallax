@@ -73,6 +73,12 @@ $(document).ready(function(){
       $("#mission-captions").html("<p>" + cue.text + "</p>");
     // do something
     }
+
+    $(videoElement).on("timeupdate", function() {
+      console.log("time update");
+      console.log(textTrack.activeCues[0]);
+    });
+
     for (var j = 0; j < textTrack.cues.length; ++j) {
       var cue = textTrack.cues[j];
       cue.onenter = function(){

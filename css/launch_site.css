@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+#mission-title{
+		margin: 0;
+	}
 .video-overlay-left-button p{
 	display: none;
 }
@@ -416,8 +419,8 @@ p.vcard {
 }
 .value-container{
 	width: 120px;
-	margin-left: 2.7vw;
-	margin-right: 2.7vw;
+	margin-left: 2.3vw;
+	margin-right: 2.3vw;
 	display: inline-block;
 	vertical-align: top;
 }
