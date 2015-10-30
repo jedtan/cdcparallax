@@ -67,6 +67,12 @@ $(document).ready(function(){
     var textTracks = videoElement.textTracks; // one for each track element
     var textTrack = textTracks[0]; // corresponds to the first track element
     console.log(textTrack);
+    textTrack.oncuechange = function (){
+    // "this" is a textTrack
+      var cue = this.activeCues[0]; // assuming there is only one active cue
+      console.log(cue);
+    // do something
+    }
     for (var j = 0; j < textTrack.cues.length; ++j) {
       var cue = textTrack.cues[j];
       cue.onenter = function(){
