@@ -68,7 +68,7 @@ $(document).ready(function(){
     for (var j = 0; j < textTrack.cues.length; ++j) {
       var cue = textTrack.cues[j];
       cue.onenter = function(){
-        console.log("enter");
+        $("#mission-captions").html("<p>" + cue.text + "</p>")
       };
 
       cue.onexit = function(){
