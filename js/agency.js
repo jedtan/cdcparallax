@@ -94,21 +94,21 @@ $(document).ready(function(){
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
-      var circlewidth = .36 * width;
+      var circlewidth = .34 * width;
       $('.more').width(circlewidth);
       $('.more').height(circlewidth);
       $(".more").css("line-height", circlewidth + "px");
-      newWidth = width * .29;
+      newWidth = width * .30;
       newWidthC = newWidth + 112;
-      leftWidth = -width * .02;
+      leftWidth = width * .01;
       leftWidthC = leftWidth + 112;
       rightWidth = width *.6;
       rightWidthC = rightWidth + 112;
-      topHeight = height * .04;
+      topHeight = height * .05;
       topHeightC = topHeight - 50;
       newHeight = height * .38;
       newHeightC = newHeight - 50;
-      bottomHeight = height * .6;
+      bottomHeight = height * .59;
       bottomHeightC = bottomHeight - 50;
       $("#design").css({"left": newWidth + "px", "top" : topHeight + "px"});
       $("#design-caption").css({"left": newWidthC + "px", "top" : topHeightC + "px"});
