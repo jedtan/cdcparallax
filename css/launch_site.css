@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
+.below-popup{
+	display: none;
+}
 .navbar-header{
 	min-height: 55px;
 }
@@ -43,8 +46,11 @@
 }
 
 .audience{
-	border-bottom: 2px dashed #999;
+	border-bottom: dotted 1px #827252;
     text-decoration: none;
+}
+.audience:hover{
+	text-decoration: none;
 }
 #mainLogo{
 	display: inline;
@@ -196,7 +202,8 @@ hr{
 	font-size: 1.5em;
 }
 .more:hover{
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(241, 241, 241, .5);
+
 	/*background-color: yellow;*/
 }
 .more-caption{
@@ -314,9 +321,8 @@ hr{
     border-right: 1px solid #2E2D29;
 }
 }
+
 @media (max-width: 1033px){
-
-
 
 .site-name{
 	font-family: 'Source Sans Pro',sans-serif !important;
@@ -347,6 +353,9 @@ hr{
 }
 }
 @media (min-width: 768px){
+.launchpage-button{
+	margin-top: 30px;
+}
 .video-overlay-left {
     width: 750px;
     
@@ -527,11 +536,21 @@ strong{
 	position: absolute;
 }
 
+.layer{
 
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 #video-overlay{
 	position: relative; 
 	text-align: left;
-	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	background-image: url("../img/video_still_downsized.png");
+	background-size: cover;
 }
 .video-overlay-left-text{
 	float: left;
@@ -704,6 +723,7 @@ body{
 	font-size: 20px;
 	text-align: left;
 	margin-top: 0px;
+	line-height: 1.10em;
 }
 
 
@@ -961,7 +981,6 @@ a.anchor{
     font-size: 18px;
    	padding-top: 5px;
     letter-spacing: 0;
-    line-height: 1.15em;
 }
 #site-name, #site-title-first-line {
     margin-bottom: -6px;
@@ -1022,6 +1041,7 @@ a.anchor{
 	.paragraph-mission-text, .paragraph-text{
 		font-size: 18px;
 		text-align: center;
+		line-height: 1.05em;
 	}
 
 	#countbox1{

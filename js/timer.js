@@ -17,7 +17,7 @@ CDown.prototype = {
 	},
 	expire: function(idxs){
 		for(var x in idxs) {
-			this.display(this.counts[idxs[x]], "Now!");
+			this.display(this.counts[idxs[x]], "<h2 class='paragraph-mission-text'> Now! </h2>");
 			this.counts.splice(idxs[x], 1);
 		}
 	},

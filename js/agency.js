@@ -13,9 +13,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('video-container', {
           videoId: '-Nmgm3PwZFk',
-          playerVars: { 'modestbranding': 1, 'showinfo': 0, 'controls':0, 'start': 24},
+          playerVars: { 'modestbranding': 1, 'showinfo': 0, 'controls':1},
           events: {
-            'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
         });
@@ -32,7 +31,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 1);
           done = true;
         }
       }
@@ -94,22 +92,25 @@ $(document).ready(function(){
     function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
-      var circlewidth = .34 * width;
+      var circlewidth = .35 * width;
       $('.more').width(circlewidth);
       $('.more').height(circlewidth);
       $(".more").css("line-height", circlewidth + "px");
-      newWidth = width * .30;
-      newWidthC = newWidth + 112;
-      leftWidth = width * .01;
-      leftWidthC = leftWidth + 112;
-      rightWidth = width *.6;
-      rightWidthC = rightWidth + 112;
+      newWidth = width * .29;
+      newWidthC = newWidth + circlewidth - 21;
+      //newWidthC = newWidth + 112;
+      leftWidth = width * .022;
+      //leftWidthC = leftWidth + 112;
+      leftWidthC = leftWidth + circlewidth - 21;
+      rightWidth = width *.58;
+      //rightWidthC = rightWidth + 112;
+      rightWidthC = rightWidth + circlewidth - 21;
       topHeight = height * .05;
-      topHeightC = topHeight - 50;
-      newHeight = height * .38;
-      newHeightC = newHeight - 50;
-      bottomHeight = height * .59;
-      bottomHeightC = bottomHeight - 50;
+      topHeightC = topHeight - 50;// - circlewidth + 28;
+      newHeight = height * .37;
+      newHeightC = newHeight - 50;// - circlewidth + 28;
+      bottomHeight = height * .57;
+      bottomHeightC = bottomHeight - 50;// - circlewidth + 28;
       $("#design").css({"left": newWidth + "px", "top" : topHeight + "px"});
       $("#design-caption").css({"left": newWidthC + "px", "top" : topHeightC + "px"});
       $("#connect-circle").css({"left": newWidth + "px", "top": newHeight + "px"});
@@ -127,14 +128,23 @@ $(document).ready(function(){
     $('.below-popup').hide();
     $('#mission-audio-player').hide();
     $('#mission-captions').hide();
+    var timer;
     $('.audience').hover(function(e){
       console.log(e);
       $('.below-popup').css( 'position', 'absolute' );
-        $('.below-popup').css( 'top', e.pageY-20);
-        $('.below-popup').css( 'left', e.pageX-70);
-       $('.below-popup').show();
+          $('.below-popup').css( 'top', e.pageY-20);
+          $('.below-popup').css( 'left', e.pageX-70);
+          $('.below-popup').fadeIn();
+      
+        timer = setTimeout(function() {
+          
+        }, 150);
+
+       
       },function(){
-      $('.below-popup').hide();
+      clearTimeout(timer);
+
+      $('.below-popup').fadeOut();
     });
     $('#design').mouseenter(function() {
         $('#design-caption').show();
@@ -170,7 +180,7 @@ $(document).ready(function(){
       player.pauseVideo();
     });
     $('#mission-read').click(function(){
-        window.location.href = "https://beam.stanford.edu/sites/default/files/parallax_vision_audio_short_-_10_8_15_5.02_pm.pdf"
+        window.location.href = "https://beam.stanford.edu/sites/default/files/parallax_vision_audio_short_-_10_8_15_5.02_pm1.pdf"
     });
     $('.read-more').click(function(){
         window.location.href="https://beam.stanford.edu/about-us";
@@ -193,4 +203,18 @@ $(document).ready(function(){
             $("video").get(0).pause();
         } */
     });
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 });
