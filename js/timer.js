@@ -85,5 +85,5 @@ CDown.prototype = {
 window.onload=function(){
 	var cdown = new CDown();
 
-	cdown.add(new Date(2016,1,14,14,0,0), "countbox1");
+	cdown.add(new Date(2016,0,14,14,0,0), "countbox1");
 };
