@@ -60,36 +60,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-  console.log("hi");
-    var videoElement = document.getElementById("mission-audio-player");
-    var textTracks = videoElement.textTracks; // one for each track element
-    var textTrack = textTracks[0]; // corresponds to the first track element
-    console.log(textTrack);
-    textTrack.oncuechange = function (){
-    // "this" is a textTrack
-      var cue = this.activeCues[0]; // assuming there is only one active cue
-      $("#mission-captions").html("<p>" + cue.text + "</p>");
-    // do something
-    }
-
-    $(videoElement).on("timeupdate", function() {
-      console.log("time update");
-      $("#mission-captions").html("<p>" + textTrack.activeCues[0].text + "</p>");
-    });
-
-    /*for (var j = 0; j < textTrack.cues.length; ++j) {
-      var cue = textTrack.cues[j];
-      cue.onenter = function(){
-        console.log("hi");
-        console.log(cue.text);
-        
-      };
-
-      cue.onexit = function(){
-        // do something else
-      };
-    }*/
-    function resize(){
+      function resize(){
       var width  = $('#model-graphic').width();
       var height  = $('#model-graphic').height();
       var circlewidth = .35 * width;
@@ -124,13 +95,43 @@ $(document).ready(function(){
       resize();
     });
     resize();
+  console.log("hi");
+    var videoElement = document.getElementById("mission-audio-player");
+    var textTracks = videoElement.textTracks; // one for each track element
+    var textTrack = textTracks[0]; // corresponds to the first track element
+    console.log(textTrack);
+    textTrack.oncuechange = function (){
+    // "this" is a textTrack
+      var cue = this.activeCues[0]; // assuming there is only one active cue
+      $("#mission-captions").html("<p>" + cue.text + "</p>");
+    // do something
+    }
+
+    $(videoElement).on("timeupdate", function() {
+      console.log("time update");
+      $("#mission-captions").html("<p>" + textTrack.activeCues[0].text + "</p>");
+    });
+
+    /*for (var j = 0; j < textTrack.cues.length; ++j) {
+      var cue = textTrack.cues[j];
+      cue.onenter = function(){
+        console.log("hi");
+        console.log(cue.text);
+        
+      };
+
+      cue.onexit = function(){
+        // do something else
+      };
+    }*/
+
     $('.more-caption').hide();
     $('.below-popup').hide();
     $('#mission-audio-player').hide();
     $('#mission-captions').hide();
     var timer;
-    $('.audience').hover(function(e){
-      console.log(e);
+    /*$('.audience').hover(function(e){
+      console.log($(".audience").position())
       $('.below-popup').css( 'position', 'absolute' );
           $('.below-popup').css( 'top', e.pageY-20);
           $('.below-popup').css( 'left', e.pageX-70);
@@ -145,6 +146,46 @@ $(document).ready(function(){
       clearTimeout(timer);
 
       $('.below-popup').fadeOut();
+    });*/
+$('.audience').mouseenter(function() {
+        var ttLeft,
+            ttTop,
+            $this=$(this),
+            $tip = $('.below-popup'),
+            triggerPos = $this.offset(),
+            triggerH = $this.outerHeight(),
+            triggerW = $this.outerWidth(),
+            tipW = $tip.outerWidth(),
+            tipH = $tip.outerHeight(),
+            screenW = $(window).width(),
+            scrollTop = $(document).scrollTop();
+        
+        if (triggerPos.top - tipH - scrollTop > 0 ) {
+            ttTop = triggerPos.top - tipH +250;
+        } else {
+            ttTop = triggerPos.top + triggerH +100 ;            
+        }
+        
+        var overFlowRight = (triggerPos.left + tipW) - screenW;    
+        if (overFlowRight > 0) {
+            ttLeft = triggerPos.left - overFlowRight - 10;    
+        } else {
+            ttLeft = triggerPos.left;    
+        }
+        
+        
+        $tip
+           .css({
+            left : ttLeft ,
+            top : ttTop,
+            position: 'absolute'
+            })
+            .stop(true,true).fadeIn(200).delay(500);
+    }); // end mouseover
+    $('.audience').mouseout(function () {
+      setTimeout(function(){
+     $('.below-popup').stop(true,true).fadeOut(200)
+    }, 1000);
     });
     $('#design').mouseenter(function() {
         $('#design-caption').show();
