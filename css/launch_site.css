@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*Connections in Actions Lineup*/
 .footer-text-p a{
-	color:#ccff66;
+	text-decoration: underline;
+	color:white;
 }
 .below-popup{
 	display: none;
